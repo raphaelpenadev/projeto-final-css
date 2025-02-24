@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+:root {
+  --preto-principal: #232323;
+  --amarelo-principal: #ffa500;
+  --cinza-fundo-pizza: #eaeaea;
+}
+
+main {
+  text-align: center;
+  width: 100%;
+}
+
+nav {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: var(--preto-principal);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--cinza-fundo-pizza);
+}
+
+nav > a {
+  margin-left: 2rem;
+}
+
+.hero {
+  width: 100%;
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  object-position: top;
+}
+
+.hero div {
+  width: 100%;
+  top: 0;
+  margin: 25vh auto;
+  position: absolute;
+}
+
+.hero div h1 {
+  font-size: 3rem;
+  font-weight: 200;
+  color: var(--cinza-fundo-pizza);
+}
+
+.hero div p {
+  padding: 1rem 0;
+  color: var(--cinza-fundo-pizza);
+}
+
+.btn-cta {
+  background-color: var(--amarelo-principal);
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: var(--preto-principal);
+  font-weight: 600;
+}
+
+.menu-items {
+  width: 100%;
+}
+
+.menu-items h2 {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+div.card-pizzas {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card-pizza {
+  display: inline-block;
+  width: 25%;
+  background-color: var(--cinza-fundo-pizza);
+  margin-left: 0.75rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 1.5rem;
+  text-align: left;
+}
+
+.card-pizza img {
+  width: 100%;
+  object-fit: cover;
+}
