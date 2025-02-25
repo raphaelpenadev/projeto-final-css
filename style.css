@@ -1,45 +1,173 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
   --preto-principal: #232323;
   --amarelo-principal: #ffa500;
-  --cinza-fundo-pizza: #eaeaea;
+  --branco-pincipal: #fff;
+  --branco-fundo: #f0f0f0;
 }
 
 header {
-  padding: 2rem 0;
   background-color: var(--preto-principal);
 }
 
-header, header ul {
-  width: 100%;
-  text-align: center;  
+header nav {
+  padding: 2rem 0;
+  text-align: center;
 }
 
-
-ul li {
-  display: inline-block;
+header nav ul {
   list-style-type: none;
-  
 }
 
-ul li + li {
-  margin-left: 4rem;
-}
-
-ul li a {
+header nav ul li a {
+  color: var(--branco-pincipal);
+  display: inline-block;
   text-decoration: none;
-  color: var(--cinza-fundo-pizza);
-  font-weight: 400;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+nav ul > li {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 3rem;
+}
+
+header nav ul li a:hover {
+  color: var(--amarelo-principal);
+  transition: 0.2s;
+}
+
+#home {
+  background-image: url("img/pexels-narda-yescas.jpg");
+  background-size: cover;
+  height: 75vh;
+  width: 100%;
 }
 
 .hero {
-  
+  padding-top: 15vh;
+  text-align: center;
 }
 
+.hero h1 {
+  color: var(--branco-pincipal);
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+.hero p {
+  color: var(--branco-pincipal);
+  letter-spacing: 0.2rem;
+  margin: 1rem 0;
+}
+
+.cta-button {
+  background-color: var(--amarelo-principal);
+  border-radius: 0.35rem;
+  color: var(--preto-principal);
+  display: inline-block;
+  font-weight: 700;
+  padding: 0.5rem 1.25rem;
+  text-decoration: none;
+}
+
+#menu {
+  text-align: center;
+  width: 100%;
+}
+
+section > h2 {
+  font-size: 2rem;
+  padding: 3rem 0 1rem 0;
+  text-align: center;
+}
+
+#menu ul {
+  padding: 0 4rem;
+}
+
+#menu ul li {
+  background-color: #eaeaea;
+  display: inline-block;
+  margin: 0 2rem 2rem 0;
+  text-align: left;
+  width: 30%;
+}
+
+#menu ul li img {
+  width: 100%;
+}
+
+#menu ul li h3 {
+  padding: 1rem;
+}
+
+#menu ul li p {
+  padding: 0 2rem 2rem 1rem;
+}
+
+#about {
+  width: 100%;
+  background-image: linear-gradient(#00000028, #000000d2),
+    url("img/pexels-eneida-nieves.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 35vh;
+  text-align: center;
+  padding-top: 1rem;
+  color: var(--branco-pincipal);
+}
+
+#about h2 {
+  font-weight: 100;
+}
+
+#contact {
+  text-align: center;
+}
+
+address {
+  width: 100%;
+  display: inline-block;
+  padding: 4rem 2rem;
+}
+
+address div {
+  display: inline-block;
+  text-align: left;
+}
+
+address div a {
+  color: var(--amarelo-principal);
+}
+
+address div:nth-child(1) {
+  width: 30%;
+}
+
+address div:nth-child(2) {
+  width: 20%;
+}
+
+address div:nth-child(3) {
+  width: 40%;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--preto-principal);
+  font-size: 1.3rem;
+  padding: 1rem 0;
+  color: var(--branco-pincipal);
+  font-weight: 200;
+}
